@@ -1,9 +1,8 @@
-# streamlit_app.py
 import streamlit as st
-import openai
+from openai import OpenAI
 
 api_key= st.text_input("OpenAI API Key", type="password")
-client = OpenAI(api_key="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")
+client = OpenAI(api_key=api_key)
 
 st.title("OpenAI GPT model")
 
